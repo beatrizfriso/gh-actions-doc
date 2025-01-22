@@ -25,4 +25,16 @@ on: [push, fork]
 ```
 
 *usando vários tipos de atividade*
-alguns eventos têm tipos de atividade que oferecem mais controle sobre quando o workflow deve ser executado. para isso, usamos o : on.<event_name>.types
+
+alguns eventos têm tipos de atividade que oferecem mais controle7 sobre quando o workflow deve ser executado. para isso, usamos o: 
+```
+on.<event_name>.types
+```
+```
+on:
+  issues:
+    types:
+      - opened
+      - labeled
+```
+
